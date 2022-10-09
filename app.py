@@ -14,7 +14,7 @@ app = dash_app.server
 
 def update_figure():
 
-    fig = px.scatter(df, x="fips", y="value", hover_name="value",
+    fig = px.scatter(df, x="geoid", y="value", hover_name="value",
                      log_x=True, template="plotly_dark")
     return fig
 
